@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입양식</title>
+</head>
+<body>
+    <h1>회원가입양식</h1>
+
+    <form name = "myform3" action = "login.do" method="post">
+        <table border="0" width = "900" height = "300" align="left">
+
+            <h5><font color="red"> * </font>표시 항목은 필수 입력 항목입니다.</h5>
+            <tr><td align="right">아이디</td><td><font color="red"> * </font><input type="text" name="id"> 
+                <input type ="button" value="ID중복검사"><br>
+                <h5>아이디는 영문, 숫자 조합으로 하셔야 합니다. [4자리이상 12자리 이하] <br>
+                아이디는 <font color="red">소문자</font>로 저장 됩니다.</h5></td></tr>
+
+            <tr><td align="right">암 호</td><td><font color="red"> * </font><input type="password" name="pwd">
+                <h6>비밀번호는 4자리이상 12자리이하로 입력해주세요.</h6></td></tr>
+
+            <tr><td align="right">암호확인</td><td><font color="red"> * </font><input type="password" name="pwd"></td></tr>
+            <tr><td align="right">이름</td><td><font color="red"> * </font><input type="text" name="name"></td></tr>
+            <tr><td align="right">대화명</td><td><input type="text" name="subname">
+                <input type ="button" value="중복검사">
+                <h6>대화명을 지정하지 않으시면 회원님의 이름으로 대화명이 지정됩니다.</h6> <br>
+                <h6>대화명은 한글, 영문 관계없이 10글자 이내로 하셔야 합니다.</h6></td></tr>
+            <tr><td align="right">주민등록번호</td><td><font color="red"> * </font><input type="text" name="num1" size="7" maxlength="6">
+                -
+                 <input type="text" name="num2" size="7" maxlength="7"></td></tr>
+            <tr><td align="right">생년월일</td><td><font color="red"> * </font><input type="text" name="num3" size="3" maxlength="4">년&nbsp;
+                <input type="text" name="num4" size="1" maxlength="2">월&nbsp;
+                <input type="text" name="num5" size="1" maxlength="2">일</td></tr>
+            <tr><td align="right">성 별</td><td><font color="red"> * </font><input type="radio" name="sex" value="man"> 남자
+                <input type="radio" name = "sex" value="woman"> 여자</td></tr>
+            <tr><td align="right">E - mail</td><td><font color="red"> * </font><input type="text" name="num6" size="30" maxlength="50"></td></tr>
+            <tr><td align="right">메일수신</td><td><font color="red"> * </font><input type="radio" name="mail" value="ok"> 수신동의
+                <input type="radio" name = "mail" value="no"> 수신거부</td></tr>
+            <tr><td align="right">우편번호</td><td><font color="red"> * </font><input type="text" name="num7" size="2" maxlength="3">
+                -
+                <input type="text" name="num8" size="2" maxlength="3">
+                <input type ="button" value="검색"></td></tr>
+            <tr><td align="right">주 소</td><td><font color="red"> * </font><input type="text" name="num9" size="30" maxlength="100"> <br>
+                &nbsp;&nbsp;<input type="text" name="num10" size="20" maxlength="50"></td></tr>
+            <tr><td align="right">전화번호</td><td><font color="red"> * </font><select name = "tel">
+                <option value="02" selected>02</option>
+                <option value="031">031</option>
+                <option value="032">032</option>
+                <option value="062">062</option>
+                <option value="063">063</option>
+             </select>
+            -
+            <input type="text" name="num11" size="2" maxlength="4">
+            -
+            <input type="text" name="num12" size="2" maxlength="4"></td></tr>
+            <tr><td align="right">핸드폰</td><td><font color="red"> * </font><select name = "h.tel">
+                <option value="010" selected>010</option>
+                <option value="016">016</option>
+                <option value="011">011</option>
+                <option value="018">018</option>
+                <option value="017">017</option>
+            </select>
+            -
+            <input type="text" name="num11" size="2" maxlength="4">
+            -
+            <input type="text" name="num12" size="2" maxlength="4"></td></tr>
+            <tr><td align="right">직 업</td><td><font color="red"> * </font><select name = "job">
+                <option value="null" selected>선택하세요</option>
+                <option value="사무직">사무직</option>
+                <option value="교사">교사</option>
+                <option value="의사">의사</option>
+                <option value="변호사">변호사</option>
+           </select></td></tr>
+            <tr><td align="right">취 미</td><td><font color="red"> * </font><input type="checkbox" name = "hobby1" value="m1"> 스포츠 &nbsp;&nbsp;
+                <input type="checkbox" name = "hobby2" value="m2"> 쇼핑&nbsp;&nbsp;
+                <input type="checkbox" name = "hobby3" value="m3"> 인터넷&nbsp;&nbsp;
+                <input type="checkbox" name = "hobby4" value="m4"> 여행&nbsp;&nbsp;
+                <input type="checkbox" name = "hobby5" value="m5"> 독서&nbsp;&nbsp;              
+                <input type="checkbox" name = "hobby6" value="m6"> 영화감상&nbsp;&nbsp;              
+                <input type="checkbox" name = "hobby7" value="m7"> 음악감상&nbsp;&nbsp;</td></tr>
+            <tr><td align="right">자기소개</td><td><textarea name="profile" rows = 10 cols =50></textarea> <br>
+                <input type = "submit"value = "등록" >
+                <input type = "reset" value ="취소"></td></tr>
+
+
+
+
+
+        </table>
+        </form>
+
+
+
+        <hr>
+        <hr>
+
+        아이디  <input type="text" name="id"> 
+                <input type ="button" value="ID중복검사"><br>
+                <h5>아이디는 영문, 숫자 조합으로 하셔야 합니다. [4자리이상 12자리 이하] <br>
+                아이디는 <font color="red">소문자</font>로 저장 됩니다.</h5> <br>
+
+        암 호  <input type="password" name="pwd"> <br>
+                    <h5>비밀번호는 4자리이상 12자리이하로 입력해주세요.</h5>
+        
+        암호확인 <input type="password" name="pwd"> <br>
+
+        이름    <input type="text" name="name"> <br>
+                
+        대화명  <input type="text" name="subname">
+                <input type ="button" value="중복검사"> <br>
+                <h5>대화명을 지정하지 않으시면 회원님의 이름으로 대화명이 지정됩니다.</h5> <br>
+                <h5>대화명은 한글, 영문 관계없이 10글자 이내로 하셔야 합니다.</h5> <br>
+
+        주민등록번호 <input type="text" name="num1" size="7" maxlength="6">
+                    -
+                <input type="text" name="num2" size="7" maxlength="7"> <br>
+
+        생년월일 <input type="text" name="num3" size="3" maxlength="4">년&nbsp;
+                <input type="text" name="num4" size="1" maxlength="2">월&nbsp;
+                <input type="text" name="num5" size="1" maxlength="2">일 <br>
+
+        성 별 <input type="radio" name="sex" value="man"> 남자
+            <input type="radio" name = "sex" value="woman"> 여자 <br>
+
+        E - mail <input type="text" name="num6" size="30" maxlength="50"> <br>
+
+        메일수신 <input type="radio" name="mail" value="ok"> 수신동의
+        <input type="radio" name = "mail" value="no"> 수신거부 <br>
+            
+        우편번호 <input type="text" name="num7" size="2" maxlength="3">
+                -
+                <input type="text" name="num8" size="2" maxlength="3">
+                <input type ="button" value="검색"> <br>
+
+        주 소 <input type="text" name="num9" size="30" maxlength="100"> <br>
+            <input type="text" name="num10" size="20" maxlength="50"><br>
+
+        전화번호 <select name = "tel">
+                    <option value="02" selected>02</option>
+                    <option value="031">031</option>
+                    <option value="032">032</option>
+                    <option value="062">062</option>
+                    <option value="063">063</option>
+                 </select>
+                -
+                <input type="text" name="num11" size="2" maxlength="4">
+                -
+                <input type="text" name="num12" size="2" maxlength="4"> <br>
+
+        핸드폰 <select name = "h.tel">
+                    <option value="010" selected>010</option>
+                    <option value="016">016</option>
+                    <option value="011">011</option>
+                    <option value="018">018</option>
+                    <option value="017">017</option>
+                </select>
+                -
+                <input type="text" name="num11" size="2" maxlength="4">
+                -
+                <input type="text" name="num12" size="2" maxlength="4"> <br> 
+
+        직 업 <select name = "job">
+                    <option value="null" selected>선택하세요</option>
+                    <option value="사무직">사무직</option>
+                    <option value="교사">교사</option>
+                    <option value="의사">의사</option>
+                    <option value="변호사">변호사</option>
+               </select>
+
+        취 미 <input type="checkbox" name = "hobby1" value="m1"> 스포츠 &nbsp;&nbsp;
+            <input type="checkbox" name = "hobby2" value="m2"> 쇼핑&nbsp;&nbsp;
+            <input type="checkbox" name = "hobby3" value="m3"> 인터넷&nbsp;&nbsp;
+            <input type="checkbox" name = "hobby4" value="m4"> 여행&nbsp;&nbsp;
+            <input type="checkbox" name = "hobby5" value="m5"> 독서&nbsp;&nbsp;              
+            <input type="checkbox" name = "hobby6" value="m6"> 영화감상&nbsp;&nbsp;              
+            <input type="checkbox" name = "hobby7" value="m7"> 음악감상&nbsp;&nbsp; <br>
+            
+        자기소개 <textarea name="profile" rows = 10 cols =50></textarea> <br>
+                <input type = "submit"value = "등록">
+                <input type = "reset" value ="취소">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+<hr>
+
+
+
+    <form action="#" method="post" name="frm"> 
+
+        <table border="0" cellpadding="0" cellspacing="0"> <!-- cellpadding과 cellspacing 값을 0으로 초기화 해주지 않으면 테이블내부의 행/열 간 간격이 벌어진다. -->
+        <caption align="left">
+        <font color="white">..</font><font color="red">*</font><font id="s">표시 항목은 필수 입력 항목입니다.</font></caption>
+         <tr height="60">
+          <td align="right" width="100" bgcolor="#efefef">아&nbsp;이&nbsp;디&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*&nbsp;</font></td>
+          <td width="600">  
+           <input type="text" name="memId" size="16">&nbsp;&nbsp;
+           <input type="button" value="ID중복검사" onClick="winOpen()"><br>  
+           <font id="s">아이디는 영문,숫자 조합으로 하셔야 합니다.[4자리이상 12자리이하]<br>
+           아이디는 <font color="red">소문자</font>로 저장 됩니다.</font>
+          </td> <!-- 중복검사............ㅡ,.ㅡa -->
+         </tr>
+        
+         <tr height="45">
+          <td align="right" bgcolor="#efefef">암<font color="white">....</font>호&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <input type="password" name="memPwd" size="16"><br>
+           <font id="s">비밀번호는 4자리이상 12자리이하로 입력해주세요.</font>
+          </td> <!-- 비밀번호 문자와 숫자 혼합사용 체크....? -ㅅ-a -->
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">암호확인&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <input type="password" name="memPwdChk" size="16">
+          </td>
+         </tr> 
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">이<font color="white">....</font>름&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+          <input type="text" name="memName" size="16" maxlength="28">
+          </td>
+         </tr>
+        
+         <tr>
+          <td align="right" bgcolor="#efefef">대 화 명&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td>
+          <input type="text" name="memNic" size="16" maxlength="10">&nbsp;&nbsp;
+          <input type="button" value="중복검사" onClick="nickChk()"><br>
+          <font id="s">대화명을 지정하지 않으시면 회원님의 이름으로 대화명이 지정됩니다.<br>
+          대화명은 한글, 영문 관계없이 10글자 이내로 하셔야 합니다.
+          </td> <!-- 미입력시 이름이 대화명으로 지정...? -ㅅ-a -->
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">주민등록번호&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+          <input type="text" name="memJumin01" size="7" maxlength="6">-
+          <input type="text" name="memJumin02" size="7" maxlength="7">
+          </td> <!-- 주민등록 번호 유효성체크 -.-a -->
+         </tr>
+         
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">생년월일&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+          <input type="text" name="memBirth01" size="4" maxlength="4">년
+          <input type="text" name="memBirth02" size="3" maxlength="2">월
+          <input type="text" name="memBirth03" size="3" maxlength="2">일
+         </tr> <!-- 주민번호 입력에 따른 생년월일 적용 체크 -.-a -->
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">성<font color="white">....</font>별&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+          <input type="radio" name="memSung" value="man">남자&nbsp;
+          <input type="radio" name="memSung" value="woman">여자
+         </tr> <!-- 주민번호 입력에 따른 남녀 성별 체크 -.-a -->
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">E - mail&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <input type="text" name="memEmail" size="28">
+          </td>
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">메일수신&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <input type="radio" name="memEmailYes" value="mailYes" checked>수신동의&nbsp;
+           <input type="radio" name="memEmailNo" value="mailNo">수신거부
+          </td> <!-- 이메일 검사...-.-? -->
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">우편번호&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+          <input type="text" name="memZipCode01" size="4" maxlength="3">-
+          <input type="text" name="memZipCode02" size="4" maxlength="3">
+          <input type="button" value="검색" onClick="zipChk()">
+          </td> <!-- 우편번호 검색 ...? -->
+         </tr>
+        
+         <tr>
+          <td align="right" bgcolor="#efefef">주<font color="white">....</font>소&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <input type="text" name="memAddr1" size="28"><br>
+           <input type="text" name="memAddr2" size="16">
+          </td>
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">전화번호&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <select name="memTel01">
+           <option value="02">02</option>
+           <option value="033">033</option>
+           <option value="032">032</option>
+           <option value="043">043</option>
+           <option value="042">042</option>
+           <option value="041">041</option>
+           <option value="062">062</option>
+           <option value="063">063</option>
+           <option value="053">053</option>
+           <option value="061">061</option>
+           <option value="052">052</option>
+           <option value="054">054</option>
+           <option value="051">051</option>
+           <option value="055">055</option>
+           <option value="031">031</option>
+           <option value="064">064</option>
+           </select>-
+           <input type="text" name="memTel02" size="5" maxlength="4">
+           -
+           <input type="text" name="memTel03" size="5" maxlength="4"> 
+          </td> <!-- 숫자만 입력가능?? -.-a -->
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">핸 드 폰&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <select name="memMobile01">
+           <option value="010">010</option>
+           <option value="011">011</option>
+           <option value="016">016</option>
+           <option value="017">017</option>
+           <option value="018">018</option>
+           <option value="019">019</option>
+           <option value="0130">0130</option>
+           </select>-
+           <input type="text" name="memMobile02" size="5" maxlength="4">
+           -
+           <input type="text" name="memMobile03" size="5" maxlength="4"> 
+          </td> <!-- 숫자만 입력가능?? -.-a -->
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">직<font color="white">....</font>업&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td>
+           <select name="memJob">
+           <option value="Not">선택하세요</option>
+           <option value="j1">관리</option>
+           <option value="j2">건설</option>
+           <option value="j3">경비</option>
+           <option value="j4">청소</option>
+           <option value="j5">경영</option>
+           <option value="j6">회계</option>
+           <option value="j7">사무</option>
+           <option value="j8">교육</option>
+           <option value="j9">자연과학</option>
+           <option value="j10">사회과학</option>
+           <option value="j11">연구</option>
+           <option value="j12">군인</option>
+           <option value="j13">금융</option>
+           <option value="j14">보험</option>
+           <option value="j15">기계</option>
+           <option value="j16">농림어업</option>
+           <option value="j17">문화</option>
+           <option value="j18">예술</option>
+           <option value="j19">디자인</option>
+           <option value="j20">방송</option>
+           <option value="j21">미용</option>
+           <option value="j22">숙박</option>
+           <option value="j23">여행</option>
+           <option value="j24">오락</option>
+           <option value="j25">스포츠</option>
+           <option value="j26">법률</option>
+           <option value="j27">경찰</option>
+           <option value="j28">소방</option>
+           <option value="j29">교도</option>
+           <option value="j30">보건</option>
+           <option value="j31">의료</option>
+           <option value="j32">사회복지</option>
+           <option value="j33">종교</option>
+           <option value="j34">섬유</option>
+           <option value="j35">의복</option>
+           <option value="j36">식품가공</option>
+           <option value="j37">영업</option>
+           <option value="j38">판매</option>
+           <option value="j39">운전</option>
+           <option value="j40">운송</option>
+           <option value="j41">음식</option>
+           <option value="j42">재료</option>
+           <option value="j43">전기</option>
+           <option value="j44">전자</option>
+           <option value="j45">정보통신</option>
+           <option value="j46">환경</option>
+           <option value="j47">인쇄</option>
+           <option value="j48">목재</option>
+           <option value="j49">가구</option>
+           <option value="j50">공예</option>
+           <option value="j51">화학</option>
+           <option value="j52">학생</option>
+           <option value="j53">무직</option>
+           <option value="j54">기타</option>
+           </select>
+         </tr>
+        
+         <tr height="30">
+          <td align="right" bgcolor="#efefef">취<font color="white">....</font>미&nbsp;</td>
+          <td valign="top">&nbsp;&nbsp;<font color="red">*</font></td>
+          <td>
+           <input type="checkbox" name="memHobby" value="sports">스포츠&nbsp;
+           <input type="checkbox" name="memHobby" value="shopping">쇼핑&nbsp;
+           <input type="checkbox" name="memHobby" value="internet">인터넷&nbsp;
+           <input type="checkbox" name="memHobby" value="travel">여행&nbsp;
+           <input type="checkbox" name="memHobby" value="reading">독서&nbsp;
+           <input type="checkbox" name="memHobby" value="movie">영화감상&nbsp;
+           <input type="checkbox" name="memHobby" value="music">음악감상&nbsp;
+          </td> <!-- 취미 2개 이상 선택 하도록 선택 어떻게.....-.-? -->
+         </tr>
+        
+         <tr height="85">
+          <td align="right" bgcolor="#efefef">자기소개&nbsp;</td>
+          <td valign="top"></td> <!-- 자기소개 10글자 이상 어떻게?? -->
+          <td>
+           <textarea name="memIntro" rows="4" cols="65"></textarea>
+          </td>
+         </tr>
+        
+         <tr align="center">
+          <td colspan="3">
+           <input type="button" value="등록" onClick="memChk()">
+           <!-- 핸드폰까지 입력 후 등록버튼을 누르면
+           함수의 액션(action="#")이 실행되어 버린다.
+           #이 실행되면 reset이 됨...;
+           이유인즉 직업은 필수 선택이 아니고
+           취미에 체크박스의 선택 유무를 따져 value값을
+           넘겨받아 메시지를 띄우는 방법을 모르기 때문...
+           인터넷을 찾아봐도 무슨말인지 영 모르겠다;;
+           그래서 onClick="memChk()" 을 빼야 중간에 리셋이 안되지만
+           그렇다고 빼면 데이터 입력유무값이 체크가 안된다... 
+         
+           알게 되면 추가하여 올릴예정!-->
+           <font color="white">...</font>
+           <input type="reset" value="취소">
+          </td>
+         </tr>
+        </table>
+        </form>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
