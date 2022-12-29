@@ -1,0 +1,73 @@
+ /* 헤더 CSS */
+ header {
+    height: 100px;
+    position: relative;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+#top_menu {
+    position: absolute;
+    top: 10px;
+    left: 770px;
+}
+#main_menu {
+    width: 757px;
+    height: 38px;
+    background-image: url("img/main_menu_bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 210px;
+}
+#main_menu li {
+    display: inline-block;
+    margin: 12px 30px 0 50px;
+    font-size: 13px;
+}
+#main_menu a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+#main_menu a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+#main_menu a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+#main_menu a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* aside CSS */
+    /* 로그인 CSS*/
+aside {
+    width: 190px;
+    float: left;
+}
+#login_box {
+    width: 186px;
+    height: 120px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+#login_title { margin: 10px 0 0 10px; }
+#input_button { margin: 10px 0 0 10px;}
+#login_input { float: left;}
+#login_btn {
+    float: left;
+    margin: 3px 0 0 5px;
+}
+#login_input input {
+    width: 100px;
+    height: 20px;
+    border: 1px solid #dddddd;
+}
+#login_input li { margin-top: 2px;}
+#join_search { margin: 10px 0 0 5px;}
