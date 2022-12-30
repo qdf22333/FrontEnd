@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <style>
+        * { margin: 0;
+            padding: 0;}
+        body {font-size: 22px;      }
+
+        #calc {width: 300px;
+            height: 370px;
+            /* border: 2px solid red; */
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 50px;
+            position: absolute;
+        }
+        #one { 
+            /* border: 1px solid blue; */
+            width: 60px;
+            height: 60px;
+            border-radius: 90px;
+            background-color: rgb(197, 190, 190);   
+            color: black;      
+        }
+        #two { 
+            /* border: 1px solid blue; */
+            width: 60px;
+            height: 60px;
+            border-radius: 90px;
+            background-color: rgba(230, 154, 56, 0.925);          
+        }
+        #num { 
+            /* border: 1px solid blue; */
+            width: 60px;
+            height: 60px;
+            border-radius: 90px;
+            background-color: rgba(99, 92, 92, 0.925);          
+        }
+        #num1 { 
+            /* border: 1px solid blue; */
+            width: 60px;
+            height: 60px;
+            border-radius: 90px;
+            background-color: rgba(99, 92, 92, 0.925); 
+        }
+        #tb_calc { margin: 20px 20px 20px 20px;}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="calc">
+    <table id="tb_calc">
+        <tr>
+            <td id="one">AC</td>
+            <td id="one">+/-</td>
+            <td id="one">%</td>
+            <td id="two">÷</td>
+        </tr>
+        <tr>
+            <td id="num">7</td>
+            <td id="num">8</td>
+            <td id="num">9</td>
+            <td id="two">×</td>
+        </tr>
+        <tr></tr>
+            <td id="num">4</td>
+            <td id="num">5</td>
+            <td id="num">6</td>
+            <td id="two">-</td>
+        </tr>
+        <tr>
+            <td id="num">1</td>
+            <td id="num">2</td>
+            <td id="num">3</td>
+            <td id="two">+</td>
+        </tr>
+        <tr>
+            <td id="num1" colspan="2">0</td>
+            <td id="num">.</td>
+            <td id="two">=</td>
+        </tr>
+    </table>
+    </div>
+    
+</body>
+</html>
