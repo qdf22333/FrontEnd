@@ -4,293 +4,288 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메모장</title>
+    <title>메인페이지</title>
     <style>
-        * {
+        
+        * { 
             margin: 0;
             padding: 0;
         }
         body {
             font-family:"맑은 고딕", "돋움";
             font-size: 12px;
-            color: #444444;
-            background-color: #f2f0f0;
         }
-        ul {
-            list-style: none;
+        li { list-style: none;}
+        header { 
+            /* margin: auto; */
+            height: 130px;
+            /* border: 2px solid red; */
+            /* background-color: rgb(228, 241, 202); */
         }
-        a:link, a:visited, a:hover, a:active {
-            text-decoration: none;
-            color: #444444;
-        }
-        .clear {
-            clear: both;
-        }
-
-        /*-----헤더------*/
-        header {
-            height: 128px;
-        }
-        header #top {
-            width: 990px;
-            margin: 0 auto;
-            /* border: 1px solid red; */
-        }
-        header #logo {
-            float: left;
-            margin: 30px 0 0 0;
-            /* border: 1px solid blue; */
-        }
-        /* 검색 */
-        header #search {
-            float: left;
-            font-family: Sana-serif;
-            font-size: 12px;
-            color: #96c11f;
-            margin: 40px 0 0 150px;
-            /* border: 1px solid red; */
-        }
-        header #search #search_title {
-            float: left;
-            margin-top: 6px;
-        }
-        header #search #search_form {
-            float: left;
-        }
-        header #search #search_form input {
-            width: 80px;
-            height: 16px;
-            border: 0;
-            background-color: #f2f0f0;
-            border-bottom: 1px solid #cccccc;
-            margin-left: 5px;
-        }
-        header #search #search_button {
-            float: left;
-            margin: 3px 0 0 3px;
-        }
-        /* 상단 메뉴 */
-        header #top_menu {
-            float: right;
-            margin-top: 45px;
-        }
-        header #top_menu a:link {
-            font-size: 11px;
-            color: #888888;
-        }
-        header #top_menu a:hover {
-            font-size: 11px;
-            color: #888888;
-        }
-        header #top_menu a:active {
-            font-size: 11px;
-            color: #888888;
-        }
-        header #top_menu li.green a:link {
-            color: #96c11f;
-        }
-        header #top_menu li.green a:visited {
-            color: #96c11f;
-        }
-        header #top_menu li.green a:hover {
-            color: #96c11f;
-        }
-        header #top_menu li.green a:active {
-            color: #96c11f;
-        }
-        header #top_menu li {
-            display: inline;
-            margin-left: 10px;
-        }
-        /* 메인 메뉴 */
-        header #main_menu {
-            height: 38px;
-            margin-top: 15px;
-            background-color: #4e4c4d;
-        }
-        header #main_menu ul {
-            width: 990px;
-            margin: auto;
-            padding-top: 12px;
-            text-align: center;
-        }
-        header #main_menu li {
-            display: inline;
-            margin: 0 57px;
-        }
-        header #main_menu a:link {
-            color: #ffffff;
-        }
-        header #main_menu a:visited {
-            color: #ffffff;
-        }
-        header #main_menu a:hover {
-            color: #ffffff;
-        }
-        header #main_menu a:active {
-            color: #ffffff;
-        }
-
-
-        /* 메인 콘텐츠 CSS */
         #main {
-            width: 1000px;
-            margin: auto;
-            border: 1px solid red;
+            height: 1500px;
+            /* border: 2px solid blue; */
+            margin: 0 auto;
+            background-color: rgb(243, 231, 233);
         }
+     
 
-        #cat1 {
-            width: 215px;
+
+        /* header 꾸미기 */
+        #logo {
+            margin: 5px 0 0 50px;
             float: left;
-            margin-top: 15px;
-            /* border: 3px solid blue; */
+            /* border: 1px solid blue; */
+            
+            
         }
-
-        #cat_title { 
-            background-color: #96c11f;
+        #logo img {
+            width: 70px;
+            float: left;
+        }
+        #search {
+            position: absolute;
+            top: 10px;
+            left: 500px;
+        } 
+        #search_form input{
+            border-radius: 20px;
+            border: 1px solid ;
+            background-color: rgb(223, 216, 216);
+            width: 200px;
+            height: 30px;
             color: white;
-            text-align: center;
-            padding: 12px;
+        }
+     
+   
+        
+        #top_menu { 
+            float: left;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 550px;
+        }
+      
+        #top_menu li {
+            display: inline;
+            padding: 8px;
+       }
+            
+
+
+        p {
+            font-size: 20px;
+
         }
 
-        #cat1 li {
-            border-bottom: 1px solid #888888;
-            color: #4e4c4d;
-            padding: 7px 0 7px 30px;
-            font-size: 11px;
-        }
- 
-        #cat2 {
+        /* 헤더 메인메뉴  */
+
+        #main_menu { 
             float: left;
-            margin-top: 15px;
-            /* border: 1px solid royalblue; */
+            border: 1px solid red;
+            position: relative;
+            right:  250px;
+            margin: 0 auto;
+            top: 100px;
+                    
+            
         }
-        #cat3 {
+    
+        #main_menu li {
+            display: inline;
+            font-size: 18px;
+            margin: 25px;
+            font-weight: bold;
+            position: relative;
+          
+            
+        }
+        
+        a { 
+            text-decoration: none;
+        }
+        a:link { 
+            color: rgb(97, 93, 93);
+        }
+        a:hover{
+            color: rgba(0, 0, 0, 0.651);
+        }
+        a:visited { 
+            color: rgb(97, 93, 93);
+        }
+        a:active{
+            color: rgb(97, 93, 93);
+        }
+
+        .clear {clear: both;}
+
+        /* 메인 CSS */
+     
+        #main2 div{ 
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: black;
+            text-shadow: 3px 3px 2px rgb(154, 158, 158);
+            margin: 0 auto;
+        }
+
+        #main2 {
+            height: 500px;
+            /* border:  2px solid red; */
+            margin-top: 30px;
+            /* box-sizing: border-box; */
+            background-color: blanchedalmond;
+            
+        }
+        
+        #recomm {
             float: left;
-            width: 240px;
-            margin-top: 15px;
-            /* border: 1px solid orange; */
-            
-            
-            
+            position: relative;
+            /* top: 20px;
+            left: 300px; */
+            /* width: 50%; */
+            margin: 0 auto;
+            border: 2px solid red;
+
+        }
+
+        #recomm img {
+            width: 250px;
+        }
+        #recomm li {
+            display: inline;
+            margin: 7px;
+        }
+
+        /* section {
+            width: 800px;
+            border: 1px solid red;
+            margin: 0 auto;
+        } */
+
+
+
+
+
+
+        /* 푸터 CSS
+         */
+        footer {
+            height: 150px;
+            /* border: 2px solid orange; */
+            /* background-color: rgb(233, 200, 140); */
+            margin: 0 auto;
+            /* margin-right: 0px; */
+            /* width: 990px; */
+        }
+
+        footer img {
+            width: 70px;
+            float: left;
+            margin-top: 10px;
+        }
+        #footer_info {
+            text-align: left;
+            float: left;
+            color: gray;
+            margin: 30px 0 0 50px;
+        }
+        footer li {
+        }
+        
+        #wrap  {
+            width: 100%;
+            margin: 0 auto;
+            border: 3px solid brown;
         }
 
         
-        #latest_notice {
-            width: 249px;
-            height: 161px;
-            background-image: url(img/latest_notice.gif);
-            background-repeat: no-repeat;
-   
-        }
-
-        #cat3 #latest_notice ul {
-            padding: 42px 0 0 30px;
-            list-style-image: url(img/blue_dot.gif);
-        }
-        #week_event {
-            width: 240px;
-            height: 191px;
-            margin-top: 11px;
-            background-image: url(img/week_event.gif);
-            background-repeat: no-repeat;
-        }
-        #week_event img {
-            margin: 58px 0 0 22px;
-        }
-
-
-
-
-
 
     </style>
+
+
+
+
 </head>
 <body>
+
+    <!-- 헤더 시작-->
+    <div id="wrap">
     <header>
         <section id="top">
-            <a id="logo" href="index.html"><img src="img/dak3.png" width="100px;"></a>
+            <a id="logo" href="index.html"><img src="img/logo.png"></a>
             <div id="search">
-                <div id="search_title">SEARCH</div>
-                <div id="search_form"><input type="text"></div>
-                <div id="search_button"><img src="img/btn_search.gif"></div>
+                <div id="search_form"><input type="text"><button type="button"><img src="img/search.png"></button></div>
             </div>
             <nav id="top_menu">
                 <ul>
-                    <li class="green"><a href="#">로그인</a></li>
-                    <li class="green"><a href="#">회원가입</a></li>
-                    <li><a href="#">마이페이지</a></li>
-                    <li><a href="#">이용안내</a></li>
-                    <li><a href="#">고객센터</a></li>
+                    <li class="green"><a href="#" style="text-decoration: none;"><img src="img/login.png" width="30px"></a></li>
+                    <li class="green"><a href="#"><img src="img/cart.png" width="30px"></a></li>
+                    <li><a href="#"><img src="img/mypage.png" width="30px"></a></li>
                 </ul>
+                
             </nav> <!-- top_ menu-->
-            <div class="clear"></div>
         </section> <!-- section_top-->
-        <nav id="main_menu">
-            <ul>
-                <li><a href="detail.html">상세페이지</a></li>
-                <li><a href="cart.html">장바구니</a></li>
-                <li><a href="#">고객 갤러리</a></li>
-                <li><a href="#">주문배송</a></li>
-                <li><a href="#">자주 하는 질문</a></li>
-            </ul>
-        </nav>
-    </header>       <!-- 헤더 끝-->
-
-
-
-    <!-- 메인 시작 -->
-    <section id="main">
-
-        <!-- section 1 (카테고리) 시작 -->
-        <section id="cat1">
-            <div id="cat_title">
-                CATEGORY ITEM
-            </div>
-            <ul>
-                <li>생활 아트</li>
-                <li>캔버스 아트</li>
-                <li>사진 벽지</li>
-                <li>창문형/현관문형</li>
-                <li>포인트 벽지</li>
-                <li>세계지도</li>
-                <li>엔티크 세계지도 벽지</li>
-                <li>입체 세계지도 벽지</li>
-                <li>어린이방 세계지도</li>
-                <li>족자형 롤스크린</li>
-                <li>맞춤제작 결제창</li>
-            </ul>
-        </section>
-        <!-- section 1 끝 -->
-
-
-        <!-- section 2 시작 (얼룩말 그림) -->
-        <section id="cat2">
-            <div>
-                <img src="./img/main_img.gif">
-            </div>
-        </section>
-        <!-- section2 끝 -->
-
-
-        <!-- section 3 시작 -->
-        <section id="cat3">
-            <div id="latest_notice">
+        <section id="main_menu_d1">
+            <nav id="main_menu">
                 <ul>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                    <li>폭설로 인한 배송지연 안내</li>
-                </ul>
-            </div>
-            <div id="week_event">
-                <img src="./img/week_event_img.gif">
-            </div>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">닭가슴살</a></li>
+                    <li><a href="#">도시락</a></li>
+                    <li><a href="product_list1.html">샐러드</a></li>
+              </ul>
+            </nav>
         </section>
+        <div class="clear"></div>
+    </header>
+    <!-- 헤더 끝 -->
+
+
+    <!-- 메인 시작-->
+    <section id="main">
+        <!-- <section id="main1">
+            <a href="#"><img src="img/main2.png" width="500px"></a>
+        </section>
+
+        <section id="main2">
+            <div>금주의 추천상품</div>
+            <ul id="recomm">
+                <li><img src="img/recomm1.jpg"></li>
+                <li><img src="img/recomm2.jpg"></li>
+                <li><img src="img/recomm3.jpg"></li>
+                <li><img src="img/recomm4.jpg"></li>
+            </ul>
+        </section> -->
+
+        
     </section>
-    <!-- main section 끝-->
+    <!-- 메인 끝 -->
+
+
+
+    <!-- 푸터시작 -->
+    <footer>
+        <img src="img/logo.png">
+        <ul id="footer_info">
+            <li>상호 : (주) 닭형 | 대표 : 박예림 | 전화: 1544-1234 </li>
+            <li>사업자 등록번호 안내 : [123-45-67890] | 통신파매업 신고 제 2023-서울강남-12345 호</li>
+            <li>주소 : 서울특별시 주소: 서울특별시 종로구 인사동12길 12 대일빌딩 15층 | 개인정보보호책임자 : 박예림(<a href="xxx@gmail.com">xxx@gmail.com</a>)</li>
+            <li>입점/제휴/수출/마케팅 문의 : <a href="xxx@gmail.com">xxx@gmail.com</a> | 호스팅 제공 : 카페24(주)</li>
+            <li>Copyright © 2023 닭형. All rights reserved.</li>
+
+        </ul>
+
+        </div>
+
+    </footer>
+    <!-- 푸터끝 -->
+    </div>
+
 
     
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인프로젝트</title>
+    <title>(서브) 샐러드페이지</title>
     <style>
         * { 
             margin: 0;
@@ -21,16 +21,12 @@
             /* background-color: rgb(228, 241, 202); */
         }
         #main {
-            height: 700px;
+            height: 900px;
             /* border: 2px solid blue; */
             margin: 0 auto;
             background-color: rgb(243, 231, 233);
         }
-        footer {
-            height: 250px;
-            /* border: 2px solid orange; */
-            background-color: rgb(233, 200, 140);
-        }
+     
         #top {
             width: 990px;
             margin: 0 auto;
@@ -38,7 +34,7 @@
 
         /* header 꾸미기 */
         #logo {
-            margin: 5px 0 0 20px;
+            margin: 5px 0 0 50px;
             float: left;
         }
         #search {
@@ -55,6 +51,7 @@
             height: 30px;
             color: white;
         }
+     
    
         
         #top_menu { 
@@ -91,38 +88,73 @@
             font-size: 18px;
             margin: 25px;
             font-weight: bold;
-
-            
+            position: relative;+
+          
             
         }
         
         a { 
             text-decoration: none;
         }
+        a:link { 
+            color: rgb(97, 93, 93);
+        }
+        a:hover{
+            color: rgba(0, 0, 0, 0.651);
+        }
+        a:visited { 
+            color: rgb(97, 93, 93);
+        }
+        a:active{
+            color: rgb(97, 93, 93);
+        }
 
         .clear {clear: both;}
 
+        /* 메인 CSS */
+     
 
 
 
 
+
+
+
+
+        /* 푸터 CSS
+         */
         footer {
+            height: 150px;
+            /* border: 2px solid orange; */
+            /* background-color: rgb(233, 200, 140); */
             margin: 0 auto;
+            /* margin-right: 0px; */
+            width: 990px;
         }
 
+        footer img {
+            width: 70px;
+            float: left;
+            margin-top: 10px;
+        }
+        #footer_info {
+            text-align: left;
+            float: left;
+            color: gray;
+            margin: 30px 0 0 50px;
+        }
+        footer li {
+        }
+        
+        
 
     </style>
-
-
-
-
 </head>
 <body>
-
-    <!-- 헤더 시작-->
-    <header>
+     <!-- 헤더 시작-->
+     <header>
         <section id="top">
-            <a id="logo" href="proj.html"><img src="img/logo.png" width="70px;"></a>
+            <a id="logo" href="index.html"><img src="img/logo.png" width="70px;"></a>
             <div id="search">
                 <div id="search_form"><input type="text"><button type="button"><img src="img/search.png"></button></div>
             </div>
@@ -139,41 +171,39 @@
             <ul>
                 <li><a href="#">전체</a></li>
                 <li><a href="#">신상품</a></li>
-                <li><a href="#">이달의특가</a></li>
-                <li><a href="#">한팩담기</a></li>
-                <li><a href="#">정기배송</a></li>
+                <li><a href="#">닭가슴살</a></li>
+                <li><a href="#">도시락</a></li>
+                <li><a href="#">샐러드</a></li>
             </ul>
         </nav>
         <div class="clear"></div>
-
-
-
-
-
-
-
     </header>
     <!-- 헤더 끝 -->
 
 
-    <!-- 메인 시작-->
+    <!-- 메인부분 -->
     <section id="main">
-        <section>
-
-        </section>
-
-        
+`       <h1>샐러드 페이지</h1>
     </section>
-    <!-- 메인 끝 -->
+    <!-- 메인끝 -->
 
 
+     <!-- 푸터시작 -->
+     <footer>
+        <img src="img/logo.png">
+        <ul id="footer_info">
+            <li>상호 : (주) 닭형 | 대표 : 박예림 | 전화: 1544-1234 </li>
+            <li>사업자 등록번호 안내 : [123-45-67890] | 통신파매업 신고 제 2023-서울강남-12345 호</li>
+            <li>주소 : 서울특별시 주소: 서울특별시 종로구 인사동12길 12 대일빌딩 15층 | 개인정보보호책임자 : 박예림(<a href="xxx@gmail.com">xxx@gmail.com</a>)</li>
+            <li>입점/제휴/수출/마케팅 문의 : <a href="xxx@gmail.com">xxx@gmail.com</a> | 호스팅 제공 : 카페24(주)</li>
+            <li>Copyright © 2023 닭형. All rights reserved.</li>
 
-    <!-- 푸터시작 -->
-    <footer>
+        </ul>
+
+        </div>
 
     </footer>
     <!-- 푸터끝 -->
-
 
     
 </body>
