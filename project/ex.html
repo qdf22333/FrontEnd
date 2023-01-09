@@ -18,20 +18,21 @@
         }
         #wrap {
             text-align: center;
+            margin: 0 auto;
         }
         header {
             height: 130px;
             /* border: 1px solid blue; */
-            background-color: rgb(245, 209, 209);
+            /* background-color: rgb(245, 209, 209); */
         }
         #main {
-            height: 500px;
+            height: 700px;
             /* border: 1px solid green; */
-            background-color: rgb(243, 212, 155);
+            background-color: rgb(243, 231, 233);
         }
         footer {
             height: 150px;
-            background-color: rgb(228, 220, 220);                   
+            /* background-color: rgb(228, 220, 220);                    */
 
         }  
         
@@ -58,6 +59,86 @@
         footer li {
             font-size: 12px;
         }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #logo {
+            width: 60px;
+            margin-top: 10px;
+            margin-right: 1100px;
+            
+        }
+        #search input{
+            border-radius: 30px;
+            width: 200px;
+            height: 30px;
+            background-color: rgb(206, 196, 196);
+        }
+        #search img {
+            width: 20px;
+            background-color: white;
+        
+        }
+       
+        #top_menu { 
+            border: 1px solid red;
+            position: absolute;
+            left: 550px;
+        }
+      
+        #top_menu li {
+            display: inline;
+            padding: 8px;
+       }
+            
+        p {
+            font-size: 20px;
+
+        }
+
+        /* 헤더 메인메뉴  */
+
+        #main_menu { 
+            float: left;
+            border: 1px solid red;
+            position: relative;
+            right:  250px;
+            margin: 0 auto;
+            top: 100px;
+                    
+            
+        }
+    
+        #main_menu li {
+            display: inline;
+            font-size: 18px;
+            margin: 25px;
+            font-weight: bold;
+            position: relative;
+          
+            
+        }
+        
+        a { 
+            text-decoration: none;
+        }
+        a:link { 
+            color: rgb(97, 93, 93);
+        }
+        a:hover{
+            color: rgba(0, 0, 0, 0.651);
+        }
+        a:visited { 
+            color: rgb(97, 93, 93);
+        }
+        a:active{
+            color: rgb(97, 93, 93);
+        }
+
+        .clear {clear: both;}
+
        
 
     
@@ -68,7 +149,32 @@
 <body>
     <div id="wrap">
         <header>
-            <div id="container">헤더</div>
+            <div id="container">
+                <a href="ex.html"><img id="logo" src="img/logo.png"></a>
+                <div id="search"><input type="text"><button type="button"><img src="img/search.png"></button></div>
+            </div>
+
+            <nav id="top_menu">
+                <ul>
+                    <li class="green"><a href="#" style="text-decoration: none;"><img src="img/login.png" width="30px"></a></li>
+                    <li class="green"><a href="#"><img src="img/cart.png" width="30px"></a></li>
+                    <li><a href="#"><img src="img/mypage.png" width="30px"></a></li>
+                </ul>
+                
+            </nav> <!-- top_ menu-->
+        </section> <!-- section_top-->
+        <section id="main_menu_d1">
+            <nav id="main_menu">
+                <ul>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">닭가슴살</a></li>
+                    <li><a href="#">도시락</a></li>
+                    <li><a href="product_list1.html">샐러드</a></li>
+              </ul>
+            </nav>
+        </section>
+        <div class="clear"></div>
 
 
         </header>
