@@ -24,15 +24,16 @@
             height: 130px;
             /* border: 1px solid blue; */
             /* background-color: rgb(245, 209, 209); */
+            position: relative;
         }
         #main {
-            height: 700px;
+            overflow: hidden;
             /* border: 1px solid green; */
-            background-color: rgb(243, 231, 233);
+            /* background-color: rgb(243, 231, 233); */
         }
         footer {
             height: 150px;
-            /* background-color: rgb(228, 220, 220);                    */
+            background-color: rgb(228, 220, 220);                   
 
         }  
         
@@ -41,6 +42,7 @@
             height: inherit;
             margin: 0 auto;
             border: 1px solid blue;
+            position: relative;
 
         }
 
@@ -48,12 +50,16 @@
         footer img {
             width: 70px;
             float: left;
-            margin: 10px 0 0 220px;
+            position: absolute;
+            top : 10px;
+            left: 20%;
         }
         #footer_info {
             float: left;
             color: rgb(3, 0, 0);
-            margin: 30px 0 0 50px;
+            position: absolute;
+            top: 35px;
+            left: 360px;
             text-align: left;
         }
         footer li {
@@ -66,26 +72,42 @@
         }
         #logo {
             width: 60px;
-            margin-top: 10px;
-            margin-right: 1100px;
+            position: absolute;
+            top: 10px;
+            left: 60px;
             
+        }
+        #search {
+            position: absolute;
+            top: 30px;
+            right: 220px;
         }
         #search input{
             border-radius: 30px;
             width: 200px;
             height: 30px;
-            background-color: rgb(206, 196, 196);
+            background-color: rgb(236, 231, 231);
+            border: 1px solid rgba(255, 255, 255, 0);
+                
+            
         }
+
+       
+
         #search img {
             width: 20px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
+            top: 5px;
+            right: 20px;
         
         }
        
         #top_menu { 
-            border: 1px solid red;
+            /* border: 1px solid red; */
             position: absolute;
-            left: 550px;
+            right: 50px;
+            top: 30px;
         }
       
         #top_menu li {
@@ -100,13 +122,12 @@
 
         /* 헤더 메인메뉴  */
 
-        #main_menu { 
+        #main_menu{ 
             float: left;
-            border: 1px solid red;
-            position: relative;
-            right:  250px;
-            margin: 0 auto;
-            top: 100px;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 220px;
+            top: 90px;
                     
             
         }
@@ -114,12 +135,61 @@
         #main_menu li {
             display: inline;
             font-size: 18px;
-            margin: 25px;
+            margin: 30px;
             font-weight: bold;
             position: relative;
           
             
         }
+
+        /* 메인 CSS */
+        #banner {
+            width: 100%;
+            min-width: 100%;
+        }
+
+        #recomm {
+            /* background-color: gold; */
+            height: 1000px;                               
+        }           
+            
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 30px;    
+        }
+        #recomm  img {
+            width: 250px;
+            height: 250px;
+            margin: 20px;           
+            
+        }
+        #name {}
+        #price1 {
+            font-size: 14px;
+            font-weight: bold;
+            float: left;
+          
+        }
+        #price2{
+            font-weight: bold;
+            font-size: 17px;
+            color: rgb(224, 148, 7);
+            float: left;
+        }
+        #recomm ul {
+            border: 1px solid red;
+            float: left;
+            margin: 20px;
+            
+        }
+    
+      
+
+
+
+
+
+
         
         a { 
             text-decoration: none;
@@ -148,11 +218,12 @@
 </head>
 <body>
     <div id="wrap">
+        <!-- 헤더 시작--------------- -->
         <header>
             <div id="container">
                 <a href="ex.html"><img id="logo" src="img/logo.png"></a>
                 <div id="search"><input type="text"><button type="button"><img src="img/search.png"></button></div>
-            </div>
+            
 
             <nav id="top_menu">
                 <ul>
@@ -173,13 +244,57 @@
                     <li><a href="product_list1.html">샐러드</a></li>
               </ul>
             </nav>
+            </div>
         </section>
-        <div class="clear"></div>
-
-
         </header>
+        <!-- 헤더 끝 -->
+
+        <!-- 메인시작------------- -->
         <section id="main">
-            <div id="container">메인</div>
+            <img id="banner" src="img/main2.png">
+            <div id="container">
+                <h2>금주의 추천상품</h2>
+                <div id="recomm">
+                    <a href="#"><img src="img/recomm1.jpg"></a>                   
+                    <a href="#"><img src="img/recomm2.jpg"></a>
+                    <a href="#"><img src="img/recomm3.jpg"></a>
+                    <a href="#"><img src="img/recomm4.jpg"></a> 
+                    <ul>
+                        <li id="name">특수부위 안심 5종 골라담기</li>
+                        <li id="price1"><s>3,800</s> </li>
+                        <li id="price2">2,800원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">소스품은 닭가슴살 11종 골라담기</li>
+                        <li id="price1"><s>3,900</s> </li>
+                        <li id="price2">2,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">수비드 닭가슴살 6종 골라담기</li>
+                        <li id="price1"><s>3,800</s> </li>
+                        <li id="price2">2,800원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">닭가슴살 쫄깃만두 4종 골라담기</li>
+                        <li id="price1"><s>3,900</s> </li>
+                        <li id="price2">2,900원</li>
+                    </ul>  
+                </div>
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
 
 
         </section>
