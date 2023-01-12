@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+            box-sizing: border-box;
+            font-family: "맑은 고딕";
+
+        }
+
+        ul {
+            list-style: none;
+        }
+        #wrap {
+            text-align: center;
+            margin: 0 auto;
+            width: 600px;
+            /* background-color: bisque; */
+        }
+     
+           
+        
+        #container {
+            width: 450px;
+            height: inherit;
+            margin: 0 auto;
+            /* border: 1px solid blue; */
+            position: relative;
+
+        }
+
+        #logo {
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+        #back_btn {
+            position: absolute;
+            top: 26px;
+        }
+        #back {
+            border: 1px solid rgb(219, 218, 218);
+            border-radius: 30px;
+            padding: 3px 10px;
+            font-weight: bold;
+            background-color: white;         
+        
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {
+            color: black;
+        }
+        a:hover {
+            color: black;
+        }
+        #back:hover {
+            background-color: rgb(236, 232, 232);
+        }
+        #login {
+            border-top: 1px solid rgb(219, 218, 218);
+        }
+        p {
+            text-align: left;       
+            
+        }
+        #p1{
+            font-size: 20px;
+            margin: 30px 0;
+            
+        }
+        #p2{
+            font-size: 14px;
+            padding: 3px;
+        }
+        #kakao {
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        #select {
+           margin: 30px 0;
+
+        }
+        #select tr{
+        }
+        #select td {
+            border-radius: 4px;
+        }     
+   
+        #select button {
+            width: 220px;
+            height: 40px;
+            border: 1px solid rgb(219, 218, 218);
+            background-color: white;
+
+        }
+
+        
+    
+       
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="back_btn">
+            <button id="back" type="button"><a href="#">&#60; 뒤로가기</a></button>
+        </div>
+        <div id="container">
+            <img id="logo" src="img/logo.png" width="30px">
+        </div>
+        <div id="login"></div>
+        <div id="container" class="login">
+            <p id="p1">로그인</p>
+            <p id="p2">아이디와 비밀번호 입력하기 귀찮으시죠?</p>
+            <p id="p2">카카오로 1초 만에 로그인 하세요.</p>
+            <a href="#"><img id="kakao" src="img/kakao.png"></a>
+            <div id="login"></div>
+            <table id="select">
+                <tr>
+                    <td id="t1"><button type="button">기존 회원이세요?</button></td>
+                    <td id="t2"><button type="button">비회원 배송조회</td>
+                </tr>
+            </table>
+
+
+
+
+        </div>
+
+
+
+
+
+      
+    </div>
+
+
+    
+</body>
+</html>

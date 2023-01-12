@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연습</title>
+    <title>메인페이지</title>
     <style>
         * {
             margin: 0;
@@ -31,11 +31,7 @@
             /* border: 1px solid green; */
             /* background-color: rgb(243, 231, 233); */
         }
-        footer {
-            height: 150px;
-            background-color: rgb(228, 220, 220);                   
-
-        }  
+           
         
         #container {
             width: 1200px;
@@ -47,25 +43,7 @@
         }
 
 
-        footer img {
-            width: 70px;
-            float: left;
-            position: absolute;
-            top : 10px;
-            left: 20%;
-        }
-        #footer_info {
-            float: left;
-            color: rgb(3, 0, 0);
-            position: absolute;
-            top: 35px;
-            left: 360px;
-            text-align: left;
-        }
-        footer li {
-            font-size: 12px;
-        }
-
+    
         a {
             text-decoration: none;
             color: black;
@@ -91,6 +69,11 @@
                 
             
         }
+    
+        #search input:hover{
+            background-color: rgb(201, 198, 198);
+        }
+       
 
        
 
@@ -126,7 +109,7 @@
             float: left;
             /* border: 1px solid red; */
             position: absolute;
-            left: 220px;
+            left: 200px;
             top: 90px;
                     
             
@@ -143,46 +126,56 @@
         }
 
         /* 메인 CSS */
-        #banner {
+        #banner{
             width: 100%;
             min-width: 100%;
         }
 
         #recomm {
             /* background-color: gold; */
-            height: 1000px;                               
+            height: 400px;                               
         }           
             
         h2 {
             margin-top: 60px;
-            margin-bottom: 30px;    
+            margin-bottom: 30px;  
+            text-shadow: 2px 2px rgb(216, 212, 212);  
         }
         #recomm  img {
             width: 250px;
             height: 250px;
-            margin: 20px;           
+            margin: 20px;  
+            border: 1px solid rgb(151, 148, 148);    
+            padding: 10px;     
             
         }
-        #name {}
+        #name {
+            font-size: 14px;
+        }
         #price1 {
             font-size: 14px;
             font-weight: bold;
-            float: left;
+            /* float: left; */
+            /* margin: 20px; */
           
         }
         #price2{
             font-weight: bold;
             font-size: 17px;
             color: rgb(224, 148, 7);
-            float: left;
+            /* float: left; */
         }
         #recomm ul {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             float: left;
-            margin: 20px;
-            
+            margin: 0 0 0 40px;            
+            width: 250px;
         }
-    
+
+        /* 인기상품 */
+        #best {
+            height: 500px;
+        }
       
 
 
@@ -209,6 +202,58 @@
 
         .clear {clear: both;}
 
+
+
+        /* 푸터 */
+        footer {
+            height: 280px;
+            background-color: rgb(155, 152, 152);                                    
+
+        }  
+  
+
+
+        footer img {
+            width: 70px;
+            float: left;
+            position: absolute;
+            top : 110px;
+            left: 20%;
+        }
+        #footer_info {
+            float: left;
+            color: rgb(223, 219, 219);
+            position: absolute;
+            top: 130px;
+            left: 360px;
+            text-align: left;
+        }
+        footer li {
+            font-size: 12px;
+        }
+        #line {
+            border-bottom: 2px solid rgb(223, 219, 219);
+            padding: 40px;
+            
+            
+        }
+        #f_line{
+            color: white;
+            font-weight: bold;
+            margin-left: 100px;
+            /* border: 1px solid red; */
+            font-size: 15px;
+   
+        
+        }
+        #f_line_d {
+            /* border: 1px solid red; */
+            top: 25px;
+            position: absolute;
+            left: 100px;
+        }
+       
+
        
 
     
@@ -222,7 +267,7 @@
         <header>
             <div id="container">
                 <a href="ex.html"><img id="logo" src="img/logo.png"></a>
-                <div id="search"><input type="text"><button type="button"><img src="img/search.png"></button></div>
+                <div id="search"><input type="text"><button type="button"><a href="#"><img src="img/search.png"></a></button></div>
             
 
             <nav id="top_menu">
@@ -237,11 +282,12 @@
         <section id="main_menu_d1">
             <nav id="main_menu">
                 <ul>
-                    <li><a href="#">전체</a></li>
-                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">전체</a></li>                    
                     <li><a href="#">닭가슴살</a></li>
                     <li><a href="#">도시락</a></li>
-                    <li><a href="product_list1.html">샐러드</a></li>
+                    <li><a href="#">샐러드/소스</a></li>
+                    <li><a href="#">다이어트</a></li>
+                    <li><a href="#">공지사항</a></li>
               </ul>
             </nav>
             </div>
@@ -251,7 +297,8 @@
 
         <!-- 메인시작------------- -->
         <section id="main">
-            <img id="banner" src="img/main2.png">
+            <a href="#"><img id="banner" src="img/main2.png"></a>
+            <!-- 금주의 추천상품 -->
             <div id="container">
                 <h2>금주의 추천상품</h2>
                 <div id="recomm">
@@ -266,7 +313,7 @@
                     </ul>  
                     <ul>
                         <li id="name">소스품은 닭가슴살 11종 골라담기</li>
-                        <li id="price1"><s>3,900</s> </li>
+                        <li id="price1"><s>3,900</s></li>
                         <li id="price2">2,900원</li>
                     </ul>  
                     <ul>
@@ -279,27 +326,215 @@
                         <li id="price1"><s>3,900</s> </li>
                         <li id="price2">2,900원</li>
                     </ul>  
-                </div>
-                
-                
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>                                      
             </div>
+            <!-- 국내산 닭가슴살 배너 -->
+            <img id="banner" src="img/banner2.png">
+            <!-- 인기상품 -->
+            <div id="container">
+                <h2>인기상품</h2>
+                <div id="recomm">
+                    <a href="#"><img src="img/best1.png"></a>                   
+                    <a href="#"><img src="img/best2.png"></a>
+                    <a href="#"><img src="img/best3.png"></a>
+                    <a href="#"><img src="img/best4.png"></a> 
+                    <ul>
+                        <li id="name">곤약도시락 폴드치킨마일드 1팩</li>
+                        <li id="price1"><s>5,500</s> </li>
+                        <li id="price2">1,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">노릇하게 구운 주먹밥 100g 4종 혼합 10팩</li>
+                        <li id="price1"><s>20,000</s></li>
+                        <li id="price2">15,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">네꼬닭 닭가슴살 전제품★최대 10팩 10,000원 균일가</li>
+                        <li id="price1"><s>17,500</s> </li>
+                        <li id="price2">10,000원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">BEST 만원의 행복 골라담기</li>
+                        <li id="price1"><s>20,000</s> </li>
+                        <li id="price2">10,000원</li>
+                    </ul>                      
+                </div>
+                <div id="recomm">
+                    <a href="#"><img src="img/best5.png"></a>                   
+                    <a href="#"><img src="img/best6.png"></a>
+                    <a href="#"><img src="img/best7.png"></a>
+                    <a href="#"><img src="img/best8.png"></a> 
+                    <ul>
+                        <li id="name">스팀 닭가슴살볼 100g 4종 혼합 10팩</li>
+                        <li id="price1"><s>25,000</s> </li>
+                        <li id="price2">15,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">인생도시락 시즌2 10종 10팩</li>
+                        <li id="price1"><s>69,900</s></li>
+                        <li id="price2">40,800원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">닭가슴살 BIG 치킨텐더 100g 10팩</li>
+                        <li id="price1"><s>25,000</s> </li>
+                        <li id="price2">16,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">저칼로리 바베큐소스 280g 1개</li>
+                        <li id="price1"><s>3,000</s> </li>
+                        <li id="price2">2,780원</li>
+                    </ul>                      
+                </div>         
+            </div>
+            <!-- 헬스 드링크 -->
+            <img id="banner" src="img/banner3.png">
+            <div id="container">
+                <div id="recomm">
+                    <a href="#"><img src="img/drink1.png"></a>                   
+                    <a href="#"><img src="img/drink2.png"></a>
+                    <a href="#"><img src="img/drink3.png"></a>
+                    <a href="#"><img src="img/drink4.png"></a> 
+                    <ul>
+                        <li id="name"> 마시는 라이프 프로틴 16팩</li>
+                        <li id="price1"><s>32,000</s> </li>
+                        <li id="price2">17,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name"> 퍼펙트 파워쉐이크 RTD</li>
+                        <li id="price1"><s>52,000</s></li>
+                        <li id="price2">25,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name"> 라이프 프로틴</li>
+                        <li id="price1"><s>38,800</s> </li>
+                        <li id="price2">29,800원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name"> 황금비율 프리미엄 프로틴 파우더 대용량</li>
+                        <li id="price1"><s>108,200</s> </li>
+                        <li id="price2">78,900원</li>
+                    </ul>                      
+                </div>
+                <div id="recomm">
+                    <a href="#"><img src="img/drink5.png"></a>                   
+                    <a href="#"><img src="img/drink6.png"></a>
+                    <a href="#"><img src="img/drink7.png"></a>
+                    <a href="#"><img src="img/drink8.png"></a> 
+                    <ul>
+                        <li id="name"> 퍼펙트파워 단백질바 20개</li>
+                        <li id="price1"><s>59,600</s> </li>
+                        <li id="price2">18,700원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name"> 프로틴에이드 12개</li>
+                        <li id="price1"><s>37,300</s></li>
+                        <li id="price2">22,000원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name"> 다밀 뉴트리션 오곡맛/호두아몬드맛</li>
+                        <li id="price1"><s>59,800</s> </li>
+                        <li id="price2">29,800원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name"> 짜먹는 탱탱 곤약젤리 요구르트맛/석류맛 20개</li>
+                        <li id="price1"><s>29,900</s> </li>
+                        <li id="price2">14,800원</li>
+                    </ul>                      
+                </div>      
+                <!-- MD 추천 도시락-------------- -->
+                <h2>MD 추천 도시락</h2>
+                <div id="recomm">
+                    <a href="#"><img src="img/md_rice1.png"></a>                   
+                    <a href="#"><img src="img/md_rice2.png"></a>
+                    <a href="#"><img src="img/md_rice3.png"></a>
+                    <a href="#"><img src="img/md_rice4.png"></a> 
+                    <ul>
+                        <li id="name">다부진 한끼 도시락 닭가슴살 커리 5팩</li>
+                        <li id="price1"><s>35,000</s> </li>
+                        <li id="price2">23,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">다부진 한끼 도시락 마파두부 5팩</li>
+                        <li id="price1"><s>35,000</s></li>
+                        <li id="price2">23,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">다부진 한끼 도시락 버터장조림 5팩</li>
+                        <li id="price1"><s>35,000</s></li>
+                        <li id="price2">23,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">다부진 한끼 도시락 김치볶음밥&오믈렛 5팩</li>
+                        <li id="price1"><s>35,000</s></li>
+                        <li id="price2">23,900원</li>
+                    </ul>                      
+                </div>
+                <div id="recomm">
+                    <a href="#"><img src="img/md_rice5.png"></a>                   
+                    <a href="#"><img src="img/md_rice6.png"></a>
+                    <a href="#"><img src="img/md_rice7.png"></a>
+                    <a href="#"><img src="img/md_rice8.png"></a> 
+                    <ul>
+                        <li id="name">다부진 컵밥도시락 육곡밥&매콤간장찜닭 5팩</li>
+                        <li id="price1"><s>27,500</s> </li>
+                        <li id="price2">22,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">다부진 컵밥도시락 현미야채영양밥&카레치킨 5팩</li>
+                        <li id="price1"><s>27,500</s> </li>
+                        <li id="price2">22,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">다부진 컵밥도시락 카무트렌팅콩밥&어향치킨 5팩</li>
+                        <li id="price1"><s>27,500</s> </li>
+                        <li id="price2">22,900원</li>
+                    </ul>  
+                    <ul>
+                        <li id="name">다부진 컵밥도시락 렌틸콩잡곡밥&통마늘간장치킨 5팩</li>
+                        <li id="price1"><s>27,500</s> </li>
+                        <li id="price2">22,900원</li>
+                    </ul>                      
+                </div> 
+            </div> 
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    
 
 
         </section>
+        <!-- 푸터시작-------------- -->
         <footer>
             <div id="container">
+                <div id="f_line_d">
+                <a href="#" id="f_line">회사소개</a>
+                <a href="#" id="f_line">이용약관</a>
+                <a href="#" id="f_line">개인정보처리방침</a>
+                <a href="#" id="f_line">이용안내</a>
+                <a href="#" id="f_line">고객센터</a>
+                </div>
+                <div id="line"></div>
             <img src="img/logo.png">
             <ul id="footer_info">
                 <li>상호 : (주) 닭형 | 대표 : 박예림 | 전화: 1544-1234 </li>
