@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
+    <title>상품페이지</title>
     <style>
+        
         * {
             margin: 0;
             padding: 0;
             
             box-sizing: border-box;
             font-family: 'NanumSquareNeo-Variable';
-            
-            
 
         }
+       
         ul {
             list-style: none;
         }
@@ -28,6 +28,7 @@
             /* border: 1px solid blue; */
             /* background-color: rgb(245, 209, 209); */
             position: relative;
+            border-bottom: 1px solid rgb(219, 218, 218);
         }
         #main {
             overflow: hidden;
@@ -128,112 +129,99 @@
         }
 
         /* 메인 CSS */
-        #banner {
-            margin: 30px 0;
+        #lightbox{
+            /* margin: 20px 30px; */
+            height: 700px;
         }
-        #tb{
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 14px;
-            color: rgb(126, 124, 124);          
-            border-bottom: 1px solid rgb(219, 218, 218);           
-
+        #lightboxImage{
+            /* border: 1px solid blue; */
+            width: 450px;
+            position: absolute;
+            top: 70px;
+            left: 30px;
         }
-        #subject {
-            border-top: 1px solid rgb(219, 218, 218);
-            border-bottom: 1px solid rgb(219, 218, 218);
-            background-color: rgb(247, 245, 245);
-           
-        }
-        #tb td {
+        #text{
             /* border: 1px solid red; */
+            position: absolute;
+            top: 100px;
+            right: 40px;
+            text-align: left;
+            border-collapse: collapse;
+            font-size: 12px;
         }
-        #tb_num{
-            padding: 10px;
-            width: 90px;
+        #text td {
+            border-top: 1px solid rgb(219, 218, 218); 
+            border-bottom: 1px solid rgb(219, 218, 218); 
+            padding: 10px 20px;
             
         }
-        #tb_name{
+        #d1 {
+            font-size: 22px;
+
+        }
+        #s1{
+            font-size: 11px;
+        }
+       
+       
+
+        .pic {
+            width: 100px;
+        }
+        #mins{
+            position: absolute;
+            top: 520px;
+            left: 30px;
+        }
+      
+
+        #gola{
+            padding: 6px;
+        }
+        #back{
+            background-color: rgb(250, 246, 246);         
+        }
+        #text2{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 450px;
+            right: 35px;
+            font-size: 12px;
+            border-collapse: collapse;
+        }
+        #text2 td{
+            background-color: rgb(250, 246, 246); 
+            border-top: 1px solid rgb(219, 218, 218); 
+            border-bottom: 1px solid rgb(219, 218, 218); 
+            padding: 10px 30px;
+        }
+        #mini {
+            font-size: 11px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 430px;
+            right: 520px;
            
         }
-        #tb_man{
-            width: 90px;
+        #t_name{
+            width: 300px;
+            text-align: left;
         }
-        #tb_date{
+        #t_count {
+            width: 150px;
+        }
+        #t_price {
             width: 150px;
         }
 
 
-        #num{
-            padding: 10px;
-        }
-        #name{
-            text-align: left;
-            padding-left: 20px;            
-        }
-        #menu1 { 
-            color: rgb(126, 124, 124);
-            padding: 10px;
-            margin: 30px 0;
-            
-        }
-        #menu2 {
-            /* border: 1px solid red; */
-            margin: 40px 0 100px 0;
-   
-            height: 30px;
-            /* float: left; */
-        }
-        #select_date{
-            position: absolute;            
-            
-        }
-        #select_name{
-            position: absolute;
-            left: 90px;
-        }
-        #select_input{
-            position: absolute;
-            left: 165px;
-        }
-        #select_search{
-            position: absolute;
-            left: 330px;
-        }
-        #menu2 button {
-            width: 70px;
-            background-color: rgb(177, 176, 176);
-            color: white;
-            border: 1px solid;
-        }
-        select{
-            border: 1px solid rgb(161, 160, 160);
-        }
-        #menu2 input {
-            border: 1px solid rgb(161, 160, 160);
-
-        }
-
-        
-        
 
 
 
 
 
 
-
-
-
-
-
-
-       
-
-
-
-        /* 메인끝 */
-        
+        /* 공통 CSS */
         a { 
             text-decoration: none;
         }
@@ -315,8 +303,8 @@
 
     
 
-
     </style>
+
 </head>
 <body>
     <div id="wrap">
@@ -355,114 +343,63 @@
         <!-- 메인시작------------- -->
         <section id="main">
             <div id="container">
-                <img id="banner" src="img/notice_banner.png" width="1200px">
-                <table id="tb">
-                    <tr id="subject">
-                        <td id="tb_num">번호</td>
-                        <td id="tb_name">제목</td>
-                        <td id="tb_man">작성자</td>
-                        <td id="tb_date">작성일</td>
-                    </tr>
-                    <tr>
-                        <td id="num">13</td>
-                        <td id="name">닭형 배송비 및 무료배송 기준 변경 안내</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-07-01</td>
-                    </tr>
-                    <tr>
-                        <td id="num"td>12</td>
-                        <td id="name">닭형 배송비 및 무료배송 기준 변경 안내</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-07-01</td>
-                    </tr>
-                    <tr>
-                        <td id="num">11</td>
-                        <td id="name">택배 노조 파업에 따른 일부 지역 배송 안내</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-01-17</td>
-                    </tr>
-                    <tr>
-                        <td id="num">10</td>
-                        <td id="name">제주도 선박 점검으로 인한 배송지연 안내</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-07-01</td>
-                    </tr>
-                    <tr>
-                        <td id="num">9</td>
-                        <td id="name">닭형 설 연휴 예치금 증정 이벤트 당첨자 발표</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-02-09</td>
-                    </tr>
-                    <tr>
-                        <td id="num">8</td>
-                        <td id="name">네이버 신규 알림서비스 오픈!</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-02-01</td>
-                    </tr>
-                    <tr>
-                        <td id="num">7</td>
-                        <td id="name">퍼펙트 파워쉐이크 1차 사전예약 배송지연 안내</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2022-01-05</td>
-                    </tr>
-                    <tr>
-                        <td id="num">6</td>
-                        <td id="name">한미 <근력개선 머슬짱> 증정 이벤트 당첨자 발표</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2021-12-30</td>
-                    </tr>
-                    <tr>
-                        <td id="num">5</td>
-                        <td id="name">닭형X네고왕</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2021-12-02</td>
-                    </tr>
-                    <tr>
-                        <td id="num">4</td>
-                        <td id="name">좋은 4+2 특가</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2021-10-30</td>
-                    </tr>
-                    <tr>
-                        <td id="num">3</td>
-                        <td id="name">본사 이전에 따른 소재지 변경 안내</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2021-08-05</td>
-                    </tr>
-                    <tr>
-                        <td id="num">2</td>
-                        <td id="name">닭형에게 물어보살</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2021-07-01</td>
-                    </tr>
-                    <tr>
-                        <td id="num">1</td>
-                        <td id="name">단백질수확능력시험</td>
-                        <td id="man">닭형</td>
-                        <td id="date">2021-05-26</td>
-                    </tr>                
-                </table>
-                <div id="menu1">＜＜ &nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; ＞＞</div>
-                <div id="menu2">
-                    <div id="select_date">
-                        <select style="padding: 2px; width: 80px;">
-                            <option>일주일</option>
-                            <option>한달</option>
-                            <option>세달</option>
-                            <option>전체</option>
-                        </select>
-                    </div>
-                    <div id="select_name">
-                        <select style="padding: 2px;">
-                            <option>제목</option>
-                            <option>내용</option>
-                            <option>글쓴이</option>
-                            <option>아이디</option>
-                            <option>별명</option>
-                        </select>
-                    </div>
-                    <div id="select_input"><input type="text" style="width: 160px; padding: 3px;"></div>
-                    <div id="select_search"><button type="button" style="padding: 2px;">찾기</button></div>
+                <div id="lightbox"><img src="img/best1.png" id="lightboxImage"></div>
+                <div id="mins">
+                    <img src="img/prod/prod1.png" data-src="img/prod/prod1.png" class="pic">
+                    <img src="img/prod/prod2.png" data-src="img/prod/prod1.png" class="pic">
+                    <img src="img/prod/prod3.png" data-src="img/prod/prod1.png" class="pic">
+                </div>
+                <div id="content">
+                    <table id="text">
+                        <tr id="d1">
+                            <td colspan="2" style="padding: 20px 20px;"><b>닭가슴살 방울소시지 3종 골라담기</b></td>
+                        </tr>
+                        <tr id="s1">
+                            <td id="t1">소비자가</td>
+                            <td id="t2"><s>3,900</s></td>
+                        </tr>
+                        <tr style="font-size: 15px;">
+                            <td id="t1"><b>판매가</b></td>
+                            <td id="t2" style="color: rgb(224, 148, 7);"><b>2,800</b></td>
+                        </tr>
+                        <tr>
+                            <td id="t1">배송비</td>
+                            <td id="t2">3,000원 <b>(39,000원 이상 구매시 무료)</b></td>
+                        </tr>
+                        <tr>
+                            <td id="t1">소비기한</td>
+                            <td id="t2">발송기준, 소비기한 30일 이상의 제품</td>
+                        </tr>
+                        <tr>
+                            <td id="t1">배송안내</td>
+                            <td id="t2">오전 2시 이전 주문시, 당일 출고 (주말 / 공휴일 제외) 주문량에 따라 순차발송 될 수 있습니다.<br/>
+                                <span style="color: red;">제주지역 추가배송비: 3,000원</span></td>
+                        </tr>
+                        <tr id="back">
+                            <td id="t1">제품선택</td>
+                            <td id="t2">
+                                <select id="gola">
+                                    <option value="null" selected>- [필수] 옵션을 선택해 주세요 - </option>
+                                    <option>닭가슴살 방울소시지 오리지널 1팩</option>
+                                    <option>닭가슴살 방울소시지 치즈 1팩</option>
+                                    <option>닭가슴살 방울소시지 알싸청양 1팩</option>
+                                </select>                                
+                            </td>
+                        </tr>                   
+                    </table>
+                    <div id="mini">(최소주문수량 1개 이상)</div>
+                    <table id="text2">
+                        <tr>
+                            <td id="t_name">상품명</td>
+                            <td id="t_count">상품수</td>
+                            <td id="t_price">가격</td>
+                        </tr>
+                    </table>
+                    
+                    
+
+
+
                 </div>
 
 
@@ -471,10 +408,13 @@
 
 
 
+
+
+                <!-- container div  -->
             </div>
+          
 
-
-    
+            
 
 
         </section>
@@ -504,7 +444,50 @@
         </footer>
     </div>
 
+    <script>
+        // quertSelect () : css - id : #, class :
+        /* getElementById() : 태그 내부에 적용된 id
+           getElementByClassName() : 태그 내부에 적용된 class
 
+           엘리먼트(태그)의 속성값을 변경할 때 : 객체.setAttribute를 사용함. id 속성에만 적용되어있다.
+           class 
+
+        */
+
+        /* DOM 객체를 생성
+
+
+
+        */
+
+
+
+        // class, id 속성을 가져와서 변수에 할당
+        var pics = document.getElementsByClassName("pic");
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImage = document.getElementById("lightboxImage"); 
+
+        // for 루프를 돌리면서 썸네일을 클릭시 showLightbox() 함수를 호출
+        for (var i = 0; i <pics.length; i++){
+            pics[i].addEventListener("click", showLightbox);
+            // pics 배열의 i번재 요소를 클릭시 showLightbox() 함수를 호출
+        }
+
+        // 섬네일을 클릭시 img 태그의 원본 이미지를 적용하는 함수, 화면에 출력하는 함수
+        function showLightbox(){
+            var biglocation = this.getAttribute ("data-src");   //data-src 의 값을 가져와서 biglocation 변수에 할당
+            lightboxImage.setAttribute("src" , biglocation);
+            lightbox.style.display = "block";      /*화면에 출력되도록 설정 : none => block*/
+
+        }
+
+        // 출력된 화면을 클릭시 다시 원래대로 되돌리는 함수
+        lightbox.onclick = function (){
+            lightbox.style.display="none";
+        }
+
+
+    </script>
     
 </body>
 </html>
