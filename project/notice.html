@@ -12,8 +12,6 @@
             
             box-sizing: border-box;
             font-family: 'NanumSquareNeo-Variable';
-            
-            
 
         }
         ul {
@@ -23,11 +21,17 @@
             text-align: center;
             margin: 0 auto;
         }
+        #fix_logo{
+            position: fixed;
+            top: 500px;
+            right: 50px;
+        }
         header {
             height: 130px;
             /* border: 1px solid blue; */
             /* background-color: rgb(245, 209, 209); */
             position: relative;
+            border-bottom: 1px solid rgb(219, 218, 218);
         }
         #main {
             overflow: hidden;
@@ -213,8 +217,7 @@
             border: 1px solid rgb(161, 160, 160);
 
         }
-
-        
+ 
         
 
 
@@ -302,13 +305,13 @@
             position: absolute;
             left: 100px;
         }
-
         @font-face {
     font-family: 'NanumSquareNeo-Variable';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+       
        
 
        
@@ -320,6 +323,7 @@
 </head>
 <body>
     <div id="wrap">
+        <p id="fix_logo"><img src="img/fix_logo.png"></p>
         <!-- 헤더 시작--------------- -->
         <header>
             <div id="container">
@@ -370,7 +374,7 @@
                         <td id="date">2022-07-01</td>
                     </tr>
                     <tr>
-                        <td id="num"td>12</td>
+                        <td id="num">12</td>
                         <td id="name">닭형 배송비 및 무료배송 기준 변경 안내</td>
                         <td id="man">닭형</td>
                         <td id="date">2022-07-01</td>

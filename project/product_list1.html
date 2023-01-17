@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품페이지</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            
+            box-sizing: border-box;
+            font-family: 'NanumSquareNeo-Variable';
+
+        }
+       
+        ul {
+            list-style: none;
+        }
+        #wrap {
+            text-align: center;
+            margin: 0 auto;
+        }
+        header {
+            height: 130px;
+            /* border: 1px solid blue; */
+            /* background-color: rgb(245, 209, 209); */
+            position: relative;
+            border-bottom: 1px solid rgb(219, 218, 218);
+        }
+        #main {
+            overflow: hidden;
+            /* border: 1px solid green; */
+            /* background-color: rgb(243, 231, 233); */
+        }
+           
+        
+        #container {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            border: 1px solid blue;
+            position: relative;
+
+        }
+
+
+    
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #logo {
+            width: 60px;
+            position: absolute;
+            top: 10px;
+            left: 60px;
+            
+        }
+        #search {
+            position: absolute;
+            top: 30px;
+            right: 220px;
+        }
+        #search input{
+            border-radius: 30px;
+            width: 200px;
+            height: 30px;
+            background-color: rgb(236, 231, 231);
+            border: 1px solid white;
+            text-align: center;         
+                
+            
+        }
+    
+          
+        input:focus {outline: none;} /* outline 테두리 없애기 */
+
+       
+
+        #search img {
+            width: 20px;
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
+            top: 5px;
+            right: 20px;
+        
+        }
+       
+        #top_menu { 
+            /* border: 1px solid red; */
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+      
+        #top_menu li {
+            display: inline;
+            padding: 8px;
+       }
+            
+        p {
+            font-size: 20px;
+
+        }
+
+        /* 헤더 메인메뉴  */
+
+        #main_menu{ 
+            float: left;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 200px;
+            top: 90px;        
+            
+                    
+            
+        }
+    
+        #main_menu li {
+            display: inline;
+            font-size: 18px;
+            margin: 30px;
+            font-weight: bold;
+            position: relative;          
+            
+        }
+
+        /* 메인 CSS */      
+        #ex{
+            height: 750px;
+            /* border: 1px solid gold; */
+        }
+
+        #lightboxImage{
+            /* border: 1px solid blue; */
+            width: 450px;
+            position: absolute;
+            top: 70px;
+            left: 30px;
+        }
+        #text{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 100px;
+            right: 40px;
+            text-align: left;
+            border-collapse: collapse;
+            font-size: 12px;
+            border-top: 3px solid rgb(219, 218, 218);
+        }
+        #text td {
+            border-top: 1px solid rgb(219, 218, 218);
+            border-bottom: 1px solid rgb(219, 218, 218); 
+            padding: 10px 20px;
+            
+        }
+        #d1 {
+            font-size: 22px;
+
+        }
+        #s1{
+            font-size: 11px;
+        }
+       
+       
+
+        .pic {
+            width: 100px;
+        }
+        #mins{
+            position: absolute;
+            top: 520px;
+            left: 30px;
+        }
+      
+
+        #gola{
+            padding: 6px;
+        }
+        #back{
+            background-color: rgb(250, 246, 246);         
+        }
+        #text2{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 450px;
+            right: 35px;
+            font-size: 12px;
+            border-collapse: collapse;
+        }
+        #text2 td{
+            background-color: rgb(250, 246, 246); 
+            border-top: 1px solid rgb(219, 218, 218); 
+            border-bottom: 1px solid rgb(219, 218, 218); 
+            padding: 10px 30px;
+        }
+        #mini {
+            font-size: 11px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 430px;
+            right: 520px;
+           
+        }
+        #t_name{
+            width: 300px;
+            text-align: left;
+        }
+        #t_count {
+            width: 150px;
+        }
+        #t_price {
+            width: 150px;
+        }
+        #sum_price{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 500px;
+            right: 35px;
+            font-size: 12px;
+            margin-top: 20px;
+            
+        }
+
+        /* 구매하기 버튼 CSS */
+        #buy{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 550px;
+            right: 37px;
+        }
+        #buy button{
+            padding: 15px;
+            font-size: 15px;
+            border: 1px solid rgb(219, 218, 218);
+        }
+        #now{
+            width: 290px;
+            background-color: rgb(58, 58, 58);
+            color: white;
+        }
+        .keep{
+            width: 150px;
+            background-color: white;
+        }
+        #buy button:hover{
+            background-color: rgba(186, 181, 181, 0.732);
+        }
+        #pay_logo{
+            position: absolute;
+            top: 610px;
+            right: 33px;
+        }
+
+
+        /* 추가상품 */
+        #add {
+            /* border: 5p solid green;
+            height: 500px; */
+        }
+        #add_tb{
+            border: 1px solid red;
+        }
+
+
+
+
+
+
+
+
+        /* 공통 CSS */
+        a { 
+            text-decoration: none;
+        }
+        a:link { 
+            color: rgb(97, 93, 93);
+        }
+        a:hover{
+            color: rgba(0, 0, 0, 0.651);
+        }
+        a:visited { 
+            color: rgb(97, 93, 93);
+        }
+        a:active{
+            color: rgb(97, 93, 93);
+        }
+
+        .clear {clear: both;}
+
+
+
+        /* 푸터 */
+        footer {
+            height: 280px;
+            background-color: rgb(251, 249, 234);                                    
+
+        }  
+  
+
+
+        footer img {
+            width: 70px;
+            float: left;
+            position: absolute;
+            top : 110px;
+            left: 20%;
+        }
+        #footer_info {
+            float: left;
+            color: rgb(168, 165, 165);
+            position: absolute;
+            top: 130px;
+            left: 360px;
+            text-align: left;
+        }
+        footer li {
+            font-size: 12px;
+        }
+        #line {
+            border-bottom: 2px solid rgb(168, 165, 165);
+            padding: 40px;
+            
+            
+        }
+        #f_line{
+            color: rgb(70, 69, 69);
+            font-weight: bold;
+            margin-left: 100px;
+            /* border: 1px solid red; */
+            font-size: 15px;
+   
+        
+        }
+        #f_line_d {
+            /* border: 1px solid red; */
+            top: 25px;
+            position: absolute;
+            left: 100px;
+        }
+
+        @font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+       
+
+       
+
+    
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 시작--------------- -->
+        <header>
+            <div id="container">
+                <a href="ex.html"><img id="logo" src="img/logo.png"></a>
+                <div id="search"><input type="text" placeholder="닭가슴살 소시지"><button type="button"><a href="#"><img src="img/search.png"></a></button></div>
+            
+
+                <nav id="top_menu">
+                    <ul>
+                        <li class="green"><a href="#" style="text-decoration: none;"><img src="img/login.png" width="30px"></a></li>
+                        <li class="green"><a href="#"><img src="img/cart.png" width="30px"></a></li>
+                        <li><a href="#"><img src="img/mypage.png" width="30px"></a></li>
+                     </ul>
+                
+                </nav> <!-- top_ menu-->
+        <section id="main_menu_d1">
+            <nav id="main_menu">
+                <ul>
+                    <li><a href="#">전체</a></li>                    
+                    <li><a href="#">닭가슴살</a></li>
+                    <li><a href="#">도시락</a></li>
+                    <li><a href="#">샐러드/소스</a></li>
+                    <li><a href="#">다이어트</a></li>
+                    <li><a href="#">공지사항</a></li>
+              </ul>
+            </nav>
+            </div>
+        </section>
+        </header>
+        <!-- 헤더 끝 -->
+
+        <!-- 메인시작------------- -->
+        <section id="main">
+            <div id="container">
+                <div id="ex">
+                    <div id="lightbox">
+                        <img src="img/best1.png" id="lightboxImage">
+                    </div>
+                </div>
+                <div id="mins">
+                    <img src="img/prod/prod1.png" data-src="img/prod/prod1.png" class="pic">
+                    <img src="img/prod/prod2.png" data-src="img/prod/prod2.png" class="pic">
+                    <img src="img/prod/prod3.png" data-src="img/prod/prod3.png" class="pic">
+                </div>
+                <div id="content">
+                    <table id="text">
+                        <tr id="d1">
+                            <td colspan="2" style="padding: 20px 20px;"><b>닭가슴살 방울소시지 3종 골라담기</b></td>
+                        </tr>
+                        <tr id="s1">
+                            <td id="t1">소비자가</td>
+                            <td id="t2"><s>3,900</s></td>
+                        </tr>
+                        <tr style="font-size: 15px;">
+                            <td id="t1"><b>판매가</b></td>
+                            <td id="t2" style="color: rgb(224, 148, 7);"><b>2,800</b></td>
+                        </tr>
+                        <tr>
+                            <td id="t1">배송비</td>
+                            <td id="t2">3,000원 <b>(39,000원 이상 구매시 무료)</b></td>
+                        </tr>
+                        <tr>
+                            <td id="t1">소비기한</td>
+                            <td id="t2">발송기준, 소비기한 30일 이상의 제품</td>
+                        </tr>
+                        <tr>
+                            <td id="t1">배송안내</td>
+                            <td id="t2">오전 2시 이전 주문시, 당일 출고 (주말 / 공휴일 제외) 주문량에 따라 순차발송 될 수 있습니다.<br/>
+                                <span style="color: red;">제주지역 추가배송비: 3,000원</span></td>
+                        </tr>
+                        <tr id="back">
+                            <td id="t1">제품선택</td>
+                            <td id="t2">
+                                <select id="gola">
+                                    <option value="null" selected>- [필수] 옵션을 선택해 주세요 - </option>
+                                    <option>닭가슴살 방울소시지 오리지널 1팩</option>
+                                    <option>닭가슴살 방울소시지 치즈 1팩</option>
+                                    <option>닭가슴살 방울소시지 알싸청양 1팩</option>
+                                </select>                                
+                            </td>
+                        </tr>                   
+                    </table>
+                    <div id="mini">(최소주문수량 1개 이상)</div>
+                    <table id="text2">
+                        <tr>
+                            <td id="t_name">상품명</td>
+                            <td id="t_count">상품수</td>
+                            <td id="t_price">가격</td>
+                        </tr>
+                    </table>
+                    <div id="sum_price"><span style="font-weight: bold;">총 상품금액</span>(수량) : <span style="font-weight: bold; font-size: 15px;">0</span> (0개)</div>
+                    <div id="buy">
+                        <button id="now" type="button">바로 구매하기</button>
+                        <button class="keep" type="button">장바구니</button>
+                        <button class="keep" type="button">관심상품</button>
+                    </div>
+                    <div id="pay_logo"><img src="img/prod/n_pay.png" width="280px"></div>                    
+                </div>
+                <div id="add">
+                    <table id="add_tb">
+                        <tr><td>추가 구성상품  선택하신 상품은 메인 상품과 함께 결제가 가능합니다.</td></tr>
+                        <tr>
+                            <td>상품이미지</td>
+                            <td>상품명</td>
+                            <td>가격</td>
+                            <td>상품옵션</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/best1.png"></td>
+                            <td>[놓치면 후회한 닭] 첫구매 계이득 0원!</td>
+                            <td>3,200원</td>
+                            <td>
+                                <select id="add_select1">
+                                    <option value="null" selected>- [필수] 옵션을 선택해 주세요 - </option>
+                                    <option>닭가슴살 방울소시지 오리지널 1팩</option>
+                                    <option>닭가슴살 방울소시지 치즈 1팩</option>
+                                    <option>닭가슴살 방울소시지 알싸청양 1팩</option>
+                                </select>     
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/best2.png"></td>
+                            <td>추가 구매하기</td>
+                            <td>2,700원</td>
+                            <td>
+                                <select id="add_select1">
+                                    <option value="null" selected>- [필수] 옵션을 선택해 주세요 - </option>
+                                    <option>닭가슴살 방울소시지 오리지널 1팩</option>
+                                    <option>닭가슴살 방울소시지 치즈 1팩</option>
+                                    <option>닭가슴살 방울소시지 알싸청양 1팩</option>
+                                </select>  
+                            </td>
+                        </tr>
+                      
+
+                    </table>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- container div  -->
+            </div>
+          
+
+            
+
+
+        </section>
+        <!-- 푸터시작-------------- -->
+        <footer>
+            <div id="container">
+                <div id="f_line_d">
+                <a href="#" id="f_line">회사소개</a>
+                <a href="#" id="f_line">이용약관</a>
+                <a href="#" id="f_line">개인정보처리방침</a>
+                <a href="#" id="f_line">이용안내</a>
+                <a href="#" id="f_line">고객센터</a>
+                </div>
+                <div id="line"></div>
+            <img src="img/logo.png">
+            <ul id="footer_info">
+                <li>상호 : (주) 닭형 | 대표 : 박예림 | 전화: 1544-1234 </li>
+                <li>사업자 등록번호 안내 : [123-45-67890] | 통신판매업 신고 제 2023-서울강남-12345 호</li>
+                <li>주소 : 서울특별시 주소: 서울특별시 종로구 인사동12길 12 대일빌딩 15층 | 개인정보보호책임자 : 박예림(<a href="xxx@gmail.com">xxx@gmail.com</a>)</li>
+                <li>입점/제휴/수출/마케팅 문의 : <a href="xxx@gmail.com">xxx@gmail.com</a> | 호스팅 제공 : 카페24(주)</li>
+                <li>Copyright © 2023 닭형. All rights reserved.</li>
+    
+            </ul>
+    
+            </div>
+    
+        </footer>
+    </div>
+
+    <script>
+        // quertSelect () : css - id : #, class :
+        /* getElementById() : 태그 내부에 적용된 id
+           getElementByClassName() : 태그 내부에 적용된 class
+
+           엘리먼트(태그)의 속성값을 변경할 때 : 객체.setAttribute를 사용함. id 속성에만 적용되어있다.
+           class 
+
+        */
+
+        /* DOM 객체를 생성
+
+
+
+        */
+
+
+
+        // class, id 속성을 가져와서 변수에 할당
+        var pics = document.getElementsByClassName("pic");
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImage = document.getElementById("lightboxImage"); 
+
+        // for 루프를 돌리면서 썸네일을 클릭시 showLightbox() 함수를 호출
+        for (var i = 0; i <pics.length; i++){
+            pics[i].addEventListener("click", showLightbox);
+            // pics 배열의 i번재 요소를 클릭시 showLightbox() 함수를 호출
+        }
+
+        // 섬네일을 클릭시 img 태그의 원본 이미지를 적용하는 함수, 화면에 출력하는 함수
+        function showLightbox(){
+            var biglocation = this.getAttribute ("data-src");   //data-src 의 값을 가져와서 biglocation 변수에 할당
+            lightboxImage.setAttribute("src" , biglocation);
+            lightbox.style.display = "block";      /*화면에 출력되도록 설정 : none => block*/
+
+        }
+
+        // 출력된 화면을 클릭시 다시 원래대로 되돌리는 함수
+        lightbox.onclick = function (){
+            lightbox.style.display="none";
+        }
+
+
+    </script>
+    
+</body>
+</html>
